@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Kent Lewis F. Pareno | IT Professional Portfolio</title>
+  <meta name="description" content="Kent Lewis F. Pareno - IT student and aspiring web developer. Explore my skills, projects, experience, education, and downloadable CV.">
+  <meta name="keywords" content="Kent Lewis Pareno, IT portfolio, web developer, IT student, graphic design, Philippines, Calamba, portfolio">
+  <meta name="author" content="Kent Lewis F. Pareno">
+
+  <!-- Canonical URL (change this to your real domain after hosting) -->
+  <link rel="canonical" href="https://kentportfolio.example.com/">
+
+  <!-- Open Graph (for social media sharing previews) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kent Lewis F. Pareno | IT Professional Portfolio">
+  <meta property="og:description" content="IT student and aspiring web developer. Explore my skills, projects, experience, education, and downloadable CV.">
+  <meta property="og:image" content="assets/images/profile.jpeg">
+  <meta property="og:url" content="https://kentportfolio.example.com/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kent Lewis F. Pareno | IT Professional Portfolio">
+  <meta name="twitter:description" content="IT student and aspiring web developer. Explore my portfolio.">
+
+  <!-- Styles and Fonts -->
+  <link rel="stylesheet" href="assets/css/style.css?v=20261110-2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Set dark/light theme before page loads to prevent flashing -->
+  <script>
+    var savedTheme = localStorage.getItem("theme") || "light";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+  </script>
+</head>
+<body>
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home">Kent <span>Portfolio</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <!-- Dark Mode Toggle Button -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== HERO / HOME ==================== -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span>  3RD-YEAR IT STUDENT</p>
+          <h1>Hi, I'm <span style="word-spacing: 3px;"> Kent Lewis F. Pareño</span></h1>
+          <h2>Aspiring  Web Developer <span class="muted">|</span> IT Student</h2>
+          <p class="lead">I build simple and useful web solutions. Welcome to my portfolio!</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View My Projects <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-outline" href="assets/CV/Kent-CV.jpg" download="Kent-CV.jpg">Download CV <i class="fa-solid fa-download"></i></a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="hero-note"><i class="fa-solid fa-code"></i> Learning, building, and improving every day.</div>
+        </div>
+
+        <div class="hero-art" aria-label="Decorative profile illustration">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <img class="profile-placeholder" src="assets/images/profile.jpeg" alt="Portrait of Kent Lewis">
+          <div class="floating-card card-code">
+            <i class="fa-solid fa-code"></i>
+            <span>Web Development</span>
+          </div>
+          <div class="floating-card card-student">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>BS in Information Technology</span>
+          </div>
+          <div class="art-spark spark-one">✦</div>
+          <div class="art-spark spark-two">+</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== QUICK INTRO ==================== -->
+    <section class="quick-intro section section-soft">
+      <div class="container intro-row">
+        <div>
+          <p class="eyebrow">A LITTLE INTRODUCTION</p>
+          <h2>Curious by nature.<br><span class="text-accent">Builder by practice.</span></h2>
+        </div>
+        <p class="intro-description">I'm an IT student with a passion for technology, problem-solving, and creating things on the web. I enjoy turning ideas into practical projects and learning something new with every challenge.</p>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/share/1LxEEzF8vu/" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://github.com/Kent-30" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ME ==================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h2>About <span class="text-accent">Me</span></h2>
+          <p>A little more about who I am and what I enjoy.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual">
+            <img class="about-avatar" src="assets/images/profile.jpeg" alt="Portrait of Kent Lewis">
+            <div class="about-caption">
+              <span class="caption-line"></span>
+              <span>Always learning. Always creating.</span>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <h3>Hello! I'm Kent Lewis F. Pareno.</h3>
+            <p>I'm a 3rd-year Information Technology student at City College of Calamba. I love learning new things, especially in web development and technology. I enjoy solving problems, building projects, and improving my skills every day. My goal is to become a skilled IT professional who can build useful web applications and help others with technology.</p>
+
+            <!-- Basic Information Grid -->
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-icon"><i class="fa-solid fa-user"></i></span>
+                <div>
+                  <small>Full Name</small>
+                  <strong>Kent Lewis F. Pareno</strong>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon"><i class="fa-solid fa-calendar"></i></span>
+                <div>
+                  <small>Age</small>
+                  <strong>20</strong>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                <div>
+                  <small>Education</small>
+                  <strong>BS in Information Technology</strong>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon"><i class="fa-solid fa-location-dot"></i></span>
+                <div>
+                  <small>Location</small>
+                  <strong>Laguerta, Calamba City</strong>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon"><i class="fa-solid fa-envelope"></i></span>
+                <div>
+                  <small>Email</small>
+                  <strong>kentlewis95@gmail.com</strong>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon"><i class="fa-solid fa-phone"></i></span>
+                <div>
+                  <small>Phone</small>
+                  <strong>+63 985 989 831</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Areas of Specialization -->
+            <div class="specialization">
+              <h3>Areas of Specialization</h3>
+              <div class="tags tags-large">
+                <span>Web Development</span>
+                <span>Graphic Design</span>
+                <span>UI/UX Design</span>
+                <span>Computer Networking</span>
+                <span>Systems Analysis and Design</span>
+              </div>
+            </div>
+
+            <div class="interests">
+              <h3>My Interests</h3>
+              <div class="interest-list">
+                <div class="interest">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <span>Coding & Web Dev</span>
+                </div>
+                <div class="interest">
+                  <i class="fa-solid fa-basketball"></i>
+                  <span>Basketball</span>
+                </div>
+                <div class="interest">
+                  <i class="fa-solid fa-music"></i>
+                  <span>Music</span>
+                </div>
+                <div class="interest">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Photography</span>
+                </div>
+                <div class="interest">
+                  <i class="fa-solid fa-gamepad"></i>
+                  <span>Games</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section section-soft" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">MY TOOLKIT</p>
+          <h2>Skills & <span class="text-accent">Tools</span></h2>
+          <p>Technologies and tools I'm currently learning and using.</p>
+        </div>
+
+        <div class="skills-layout">
+          <!-- Technical Skills -->
+          <div class="skill-group">
+            <div class="skill-group-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="skill-group-content">
+              <h3>Technical Skills</h3>
+              <p class="skill-subtitle">Programming and web development</p>
+              <div class="skill-bars">
+                <div class="skill-bar">
+                  <div class="skill-bar-top"><span>HTML</span><span>85%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-top"><span>CSS</span><span>75%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-top"><span>JavaScript</span><span>60%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width:60%"></div></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-top"><span>Git / GitHub</span><span>55%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width:55%"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Professional Skills -->
+          <div class="skill-group">
+            <div class="skill-group-icon"><i class="fa-solid fa-people-group"></i></div>
+            <div class="skill-group-content">
+              <h3>Professional Skills</h3>
+              <p class="skill-subtitle">Skills I bring to every project</p>
+              <div class="skill-bars">
+                <div class="skill-bar">
+                  <div class="skill-bar-top"><span>Problem Solving</span><span>80%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-top"><span>Team Collaboration</span><span>80%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-top"><span>Communication</span><span>75%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-top"><span>Critical Thinking</span><span>75%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-top"><span>Research</span><span>70%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width:70%"></div></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-top"><span>Technical Documentation</span><span>65%</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width:65%"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-group">
+            <div class="skill-group-icon"><i class="fa-solid fa-gears"></i></div>
+            <div class="skill-group-content">
+              <h3>Tools & Platforms</h3>
+              <p class="skill-subtitle">Software I use to build and manage projects</p>
+              <div class="tags tags-large">
+                <span><i class="fa-solid fa-code" style="color:#007acc;margin-right:6px;"></i>VS Code</span>
+                <span><i class="fa-solid fa-code" style="color:#f6820d;margin-right:6px;"></i>Browser DevTools</span>
+                <span><i class="fa-brands fa-adobe" style="color:#ff0000;margin-right:6px;"></i>Adobe Photoshop</span>
+                <span><i class="fa-brands fa-figma" style="margin-right:6px;"></i>Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS WITH SEARCH ==================== -->
+    <section class="section section-soft" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">MY CREATIVE WORK</p>
+          <h2>My <span class="text-accent">Projects</span></h2>
+          <p>A collection of my projects. Use the search and filter to find what you need.</p>
+        </div>
+
+        <!-- Search and Filter Bar -->
+        <div class="search-bar">
+          <div class="search-input-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="projectSearch" placeholder="Search by name, technology, or description..." aria-label="Search projects">
+          </div>
+          <select id="categoryFilter" aria-label="Filter by category">
+            <option value="">All Categories</option>
+          </select>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="project-grid" id="projectGrid">
+        </div>
+
+        <!-- Message shown when no projects match the search -->
+        <p class="no-results" id="noResults" style="display:none;">No projects found. Try a different search or filter.</p>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">LEARNING BY DOING</p>
+          <h2>My <span class="text-accent">Experience</span></h2>
+          <p>Academic projects and hands-on practice as a third-year IT student.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 - Present</span>
+              <h3>UI/UX and Graphic Design Practice</h3>
+              <p class="timeline-company">Coursework & Personal Practice</p>
+              <p>Explored user-friendly layouts and visual design through class assignments and personal practice with Figma and Adobe Photoshop.</p>
+              <span class="timeline-status">Ongoing Learning</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Ongoing</span>
+              <h3>Independent Skills Development</h3>
+              <p class="timeline-company">Personal Projects</p>
+              <p>Build small projects, review my code, and learn tools such as Git and GitHub to strengthen my development fundamentals.</p>
+              <span class="timeline-status">In Progress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION & CREDENTIALS ==================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">MY BACKGROUND</p>
+          <h2>Edu<span class="text-accent">cation</span></h2>
+          <p>My educational background from elementary to college.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2012 - 2018</span>
+              <h3>Elementary School</h3>
+              <p class="timeline-company">Laguerta Elementary School</p>
+              <span class="timeline-status">Graduated</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2018 - 2022</span>
+              <h3>Junior High School</h3>
+              <p class="timeline-company">Palo Alto Integrated School</p>
+              <span class="timeline-status">Graduated</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022 - 2024</span>
+              <h3>Senior High School</h3>
+              <p class="timeline-company">Palo Alto Integrated School</p>
+              <span class="timeline-status">Graduated</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 - Present</span>
+              <h3>BS in Information Technology</h3>
+              <p class="timeline-company">City College of Calamba</p>
+              <span class="timeline-status">Ongoing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CV Download Section -->
+        <div class="cv-section">
+          <div class="cv-card">
+            <div class="cv-icon"><i class="fa-solid fa-file-lines"></i></div>
+            <div class="cv-text">
+              <h3>My Curriculum Vitae</h3>
+              <p>Download or view my CV to learn more about my background.</p>
+            </div>
+            <div class="cv-buttons">
+              <a class="btn btn-primary" href="assets/CV/Kent-CV.jpg" download="Kent-CV.jpg">
+                <i class="fa-solid fa-download"></i> Download CV
+              </a>
+              <a class="btn btn-outline" href="assets/CV/Kent-CV.jpg" target="_blank" rel="noreferrer">
+                <i class="fa-solid fa-eye"></i> View CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section section-soft" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Contact <span class="text-accent">Me</span></h2>
+          <p>Open to projects, collaborations, and new opportunities. Feel free to reach out!</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <a class="contact-item" href="mailto:kentlewis95@gmail.com">
+              <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+              <span>
+                <small>Email</small>
+                <strong>kentlewis95@gmail.com</strong>
+              </span>
+            </a>
+            <div class="contact-item">
+              <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+              <span>
+                <small>Phone</small>
+                <strong>+63 985 989 831</strong>
+              </span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <span>
+                <small>Location</small>
+                <strong>Calamba, Laguna, Philippines</strong>
+              </span>
+            </div>
+
+            <div class="social-links contact-social">
+              <a href="https://www.facebook.com/share/1LxEEzF8vu/" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://github.com/Kent-30" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/mbgorrqr" method="POST">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" maxlength="100" placeholder="Your name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" maxlength="254" placeholder="you@example.com" required>
+            </div>
+            <div class="form-row">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" maxlength="200" placeholder="What is this about?">
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" maxlength="5000" placeholder="Write your message..." required></textarea>
+            </div>
+            <button class="btn btn-primary submit-btn" type="submit">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p class="form-hint" id="formHint" aria-live="polite">Your message will be sent securely through Formspree.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a class="brand footer-brand" href="#home">Kent <span>Portfolio</span></a>
+        <p>Web Developer & IT Student</p>
+        <p class="footer-email"><i class="fa-solid fa-envelope"></i> kentlewis95@gmail.com</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <div class="footer-links-grid">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="social-links footer-social">
+          <a href="https://www.facebook.com/share/1LxEEzF8vu/" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://github.com/Kent-30" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© <span id="year"></span> Kent Lewis F. Pareno. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="assets/js/project-data.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
